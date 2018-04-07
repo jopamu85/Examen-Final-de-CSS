@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url(fonts/DancingScript-Regular.ttf);
+}
+body {
+  font-family: 'DancingScript';
+  background-color:  #02010a;
+}
+header {
+  background-color: #5b7989;
+  border-radius: 10px;
+  color: white;
+}
+h1 {
+  text-shadow: 2px 2px 0px #02010a;
+}
+#imagen_central {
+  background-color: #82c3a6;
+}
+#imagenes_secundarias {
+  background-color: #d5c75f;
+  border: 1px;
+}
+footer {
+  background-color: #C6d5c5;
+}
