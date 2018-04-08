@@ -13,48 +13,93 @@ header {
   border-radius: 10px 10px 0px 0px;
   background-color: #5b7989;
   color: white;
-  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#Titulo {
+  flex-grow: 1;
+}
+#menu_principal {
+  flex-grow: 1;
 }
 h1 {
+  width: 100%;
   margin: 10px;
   text-shadow: 2px 2px 0px #02010a;
-  width: 100%;
-  display: inline-block;
-  order: 1;
 }
-.menu_principal {
-  word-spacing: 30px;
+#menu_principal > div{
   font-size: 20px;
   margin: 10px;
-  width: 77%;
-  display: inline-block;
   text-align: right;
   order: 2;
 }
-.menu_principal > div {
-  display: inline-block;
-  flex-flow: wrap;
-}
-#Titulo {
+.opciones {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap;
 }
-
+.Inicio {
+  flex-grow: 1;
+}
+.Paisajes {
+  flex-grow: 1;
+}
+.retratos {
+  flex-grow: 1;
+}
+#menu_principal div a {
+  color: white;
+}
+#menu_principal div a:hover, .menu_principal div a:active {
+  color: white;
+  text-decoration: none!important;
+}
 #imagen_central {
   border: 0px;
   padding: 10px;
   background-color: #82c3a6;
+  order: 3;
 }
 #imagen_central img {
   max-width: 800px;
 }
+#imagenes_secundarias {
+  border: 0px;
+  padding: 10px;
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+}
 #imagenes_secundarias img {
   max-width: 400px;
 }
-
-#imagenes_secundarias {
-  background-color: #d5c75f;
+#imagen_izq {
+  flex-grow: 1;
+}
+#imagen_der {
+  flex-grow: 1;
 }
 footer {
+  border: 0px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
   background-color: #C6d5c5;
+}
+#Pie_de_pagina {
+  display: flex;
+}
+#Columna_contacto > div {
+  display: inline-block;
+  order: 5;
+}
+#Columna_Terminos > div {
+  display: inline-block;
+  order: 6;
+}
+#Columna_Redes > div {
+  display: inline-block;
+  order: 7;
+}
+#Columna_Derechos > div {
+  display: inline-block;
+  order: 8;
 }
