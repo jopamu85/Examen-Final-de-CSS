@@ -5,7 +5,6 @@
 body {
   font-family: 'DancingScript';
   background-color:  #02010a;
-  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -15,6 +14,11 @@ header {
   color: white;
   display: flex;
   flex-flow: row wrap;
+}
+.contenido {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #Titulo {
   flex-grow: 1;
