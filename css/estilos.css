@@ -10,9 +10,27 @@ header {
   background-color: #5b7989;
   border-radius: 10px;
   color: white;
+  width: 100%;
 }
 h1 {
+  margin: 10px;
   text-shadow: 2px 2px 0px #02010a;
+  width: 100%;
+  display: inline-block;
+}
+.menu_principal {
+  width: 80%;
+  display: inline-block;
+  text-align: right;
+  background-color: red;
+}
+.menu_principal > div {
+  display: inline-block;
+  flex-flow: wrap;
+}
+#Titulo {
+  display: flex;
+  flex-flow: wrap;
 }
 #imagen_central {
   background-color: #82c3a6;
