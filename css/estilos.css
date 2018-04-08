@@ -5,9 +5,9 @@
 body {
   font-family: 'DancingScript';
   background-color:  #02010a;
-  max-width: 1300px;
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   border-radius: 10px 10px 0px 0px;
@@ -61,6 +61,26 @@ h1 {
 }
 #imagen_central img {
   max-width: 800px;
+}
+#contenido img {
+  box-shadow: 2px 2px 3px #02010a;
+}
+.imagen1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%
+}
+.imagen2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}.imagen3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
 }
 #imagenes_secundarias {
   border: 0px;
