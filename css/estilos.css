@@ -5,6 +5,7 @@
 body {
   font-family: 'DancingScript';
   background-color:  #02010a;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -15,6 +16,7 @@ header {
   display: flex;
   flex-flow: row wrap;
 }
+<<<<<<< HEAD
 .contenido {
   max-width: 900px;
   margin-left: auto;
@@ -25,6 +27,8 @@ header {
   padding: 20px;
   min-width: 300px;
 }
+=======
+>>>>>>> parent of eb564c1... V2.5
 #Titulo {
   flex-grow: 1;
 }
