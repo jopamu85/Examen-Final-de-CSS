@@ -16,47 +16,51 @@ header {
   display: flex;
   flex-flow: row wrap;
 }
-<<<<<<< HEAD
-.contenido {
-  max-width: 900px;
+
+#Titulo {
+  max-height: 100px;
+  width: 450px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.contenido > div {
-  box-sizing: border-box;
-  padding: 20px;
-  min-width: 300px;
-}
-=======
->>>>>>> parent of eb564c1... V2.5
-#Titulo {
-  flex-grow: 1;
-}
 #menu_principal {
-  flex-grow: 1;
-}
-h1 {
-    margin: 10px;
-  text-shadow: 2px 2px 0px #02010a;
-}
-#menu_principal > div{
-    font-size: 20px;
-  margin: 10px;
-  text-align: right;
-  order: 2;
+  max-height: 100px;
+  width: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .opciones {
   display: flex;
   flex-flow: row wrap;
 }
 .Inicio {
+  display: block;
+  max-height: 100px;
+  max-width: 100%;
   flex-grow: 1;
 }
 .Paisajes {
+  display: block;
+  max-height: 100px;
+  max-width: 100%;
   flex-grow: 1;
 }
 .retratos {
+  display: block;
+  max-height: 100px;
+  max-width: 100%;
   flex-grow: 1;
+}
+h1 {
+  margin: 10px;
+  text-shadow: 2px 2px 0px #02010a;
+}
+#menu_principal > div{
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
 }
 #menu_principal div a {
   color: white;
@@ -69,10 +73,9 @@ h1 {
   border: 0px;
   padding: 10px;
   background-color: #82c3a6;
-  order: 3;
 }
 #imagen_central img {
-  max-width: 800px;
+  max-width: 700px;
 }
 #contenido img {
   box-shadow: 2px 2px 3px #02010a;
@@ -81,19 +84,16 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%
 }
 .imagen2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%
 }
 .imagen3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%
 }
 #imagenes_secundarias {
   border: 0px;
@@ -102,7 +102,7 @@ h1 {
   flex-flow: row wrap;
 }
 #imagenes_secundarias img {
-  max-width: 350px;
+  width: 350px;
 }
 #imagen_izq {
   flex-grow: 1;
@@ -121,39 +121,50 @@ footer {
   padding: 10px;
   background-color: #C6d5c5;
 }
-
-#Contacto > div {
-  background-color: blue;
-  box-sizing: border-box;
-  display: block;
-  max-width: 225px;
-  min-width: 100px;
-  margin: auto;
+#Pie_de_pagina {
+display: flex;
+flex-flow: row wrap;
 }
-#Columna_Terminos > div {
-  box-sizing: border-box;
+.Contacto {
   display: block;
-  min-width: 100px;
-  max-width: 225px;
   margin: auto;
+  width: 215px;
+  word-wrap: break-word;
 }
-#Columna_Redes > div {
-  box-sizing: border-box;
+.Terminos {
   display: block;
-  min-width: 100px;
-  max-width: 225px;
   margin: auto;
+  width: 215px;
+  word-wrap: break-word;
 }
-#Columna_Derechos > div {
-  box-sizing: border-box;
+.Redes_Sociales {
   display: block;
-  min-width: 100px;
-  max-width: 225px;
   margin: auto;
+  width: 215px;
+  word-wrap: break-word;
 }
-@media all (max-width: 899px) and (min-width: 480px) {
+.Derechos {
+  display: block;
+  margin: auto;
+  width: 215px;
+  word-wrap: break-word;
+}
+@media all and (max-width: 899px) {
   .contenido {
     width: 100%;
   }
-
+  .titulo_principal {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  }
+  #imagen_central img {
+    width: 100%;
+  }
+  #imagenes_secundarias img {
+    width: 100%
+  }
+  #Pie_de_pagina div {
+    width: 100%
+  }
 }
