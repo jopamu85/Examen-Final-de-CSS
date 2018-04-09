@@ -65,7 +65,7 @@ h1 {
 #menu_principal div a {
   color: white;
 }
-#menu_principal div a:hover , .menu_principal div a:active {
+.opciones div a::selection, .opciones div a:active {
   color: white;
   text-decoration: none!important;
 }
@@ -167,4 +167,16 @@ flex-flow: row wrap;
   #Pie_de_pagina div {
     width: 100%
   }
+}
+#imagen_izq img {
+  transition-duration: 1s;
+}
+#imagen_izq img:hover {
+  transform: rotateZ(10deg);
+}
+#imagen_der img {
+  transition-duration: 1s;
+}
+#imagen_der img:hover {
+  transform: translate(5px, -20px);
 }
