@@ -65,9 +65,8 @@ h1 {
 #menu_principal div a {
   color: white;
 }
-.opciones div a::selection, .opciones div a:active {
-  color: white;
-  text-decoration: none!important;
+#menu_principal div a:hover, #menu_principal div a:active, #menu_principal div a:active a:link, #menu_principal div a:visited {
+  text-transform: uppercase;
 }
 #imagen_central {
   border: 0px;
@@ -75,7 +74,7 @@ h1 {
   background-color: #82c3a6;
 }
 #imagen_central img {
-  max-width: 700px;
+  width: 500px;
 }
 #contenido img {
   box-shadow: 2px 2px 3px #02010a;
@@ -113,7 +112,48 @@ h1 {
 figcaption {
   text-align: center;
   text-decoration: underline;
-
+}
+#galeria {
+  background-color: #d5c75f;
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.fotografia1 img {
+  display: block;
+  width: 200px;
+  -webkit-filter blur (10px);
+  filter: blur(10px);
+}
+.fotografia2 img {
+  display: block;
+  width: 200px;
+  -webkit-filter grayscale (100%);
+  filter: grayscale(100%);
+}
+.fotografia3 img {
+  display: block;
+  width: 200px;
+  -webkit-filter sepia(90%);
+  filter: sepia(90%);
+}
+.fotografia4 img {
+  display: block;
+  width: 200px;
+  -webkit-filter grayscale (100%);
+  filter: grayscale(100%);
+}
+.fotografia5 img {
+  display: block;
+  width: 200px;
+}
+.fotografia6 img {
+  display: block;
+  width: 200px;
+  -webkit-filter grayscale (100%);
+  filter: grayscale(100%);
 }
 footer {
   border: 0px;
@@ -162,7 +202,27 @@ flex-flow: row wrap;
     width: 100%;
   }
   #imagenes_secundarias img {
-    width: 100%
+    width: 100%;
+  }
+  .fotografia1 img {
+    width: 100%;
+
+  }
+  .fotografia2 img {
+    width: 100%;
+
+  }
+  .fotografia3 img {
+    width: 100%;
+  }
+  .fotografia4 img {
+    width: 100%;
+  }
+  .fotografia5 img {
+    width: 100%;
+  }
+  .fotografia6 img {
+    width: 100%;
   }
   #Pie_de_pagina div {
     width: 100%
@@ -179,4 +239,18 @@ flex-flow: row wrap;
 }
 #imagen_der img:hover {
   transform: translate(5px, -20px);
+}
+header {
+  animation: Slidein 1.5s;
+}
+@-webkit-keyframes Slidein{
+0% {
+  margin-top: 150%;
+}
+60% {
+  margin-top: -5%;
+}
+100% {
+  margin-top: 0%;
+}
 }
